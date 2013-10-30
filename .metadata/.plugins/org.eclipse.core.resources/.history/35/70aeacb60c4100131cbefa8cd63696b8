@@ -152,11 +152,13 @@ double Graph::ShortestPathCost(int source, int destination)
 
 
 	AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);		//add starting node end points to Open List
+	ClosedList.push_back(vertices[currentNode.name]);												//add starting node Closed List
 
 	while(!OpenList.empty())
 	{
 		currentNode = LowestCost(OpenList);															//Find Lowest Cost Node on OpenList
 		AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);
+		ClosedList.push_back(vertices[currentNode.name]);
 
 		if(onClosedList(ClosedList, destination))												//Have we found the destination?
 		{

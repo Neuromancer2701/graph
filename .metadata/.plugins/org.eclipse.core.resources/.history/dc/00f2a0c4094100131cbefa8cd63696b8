@@ -111,23 +111,20 @@ vector<Edge> Graph::ShortestPath(int source, int destination)
 {
 	vector<Node> ClosedList;
 	multiset<Node> OpenList;
-	Node currentNode = vertices[source];
-	currentNode.TotalCostToDestination = 0;
+	Node currentNode;
 
 	if(source == destination)																		//Shouldn't happen will return empty path
 		return vertices[source].Path;
 
-	AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);		//add starting node end points to Open List
+	AddtoOpenList(OpenList, vertices[currentNode.name], currentNode.TotalCostToDestination);		//add starting node end points to Open List
 
 
 	while(!OpenList.empty())
 	{
-		currentNode = LowestCost(OpenList); //Find Lowest Cost Node on OpenList
-		//cout << "current node:"    << currentNode.name << endl;
-		//cout << "Open List size: " << OpenList.size() << endl;
-		AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);
+		currentNode = LowestCost(OpenList);															//Find Lowest Cost Node on OpenList
+		AddtoOpenList(OpenList, vertices[currentNode.name], currentNode.TotalCostToDestination);
 
-		if(onClosedList(ClosedList, destination))												//Have we found the destination?
+		if(DestinationFound(ClosedList, destination))												//Have we found the destination?
 		{
 			break;
 		}
@@ -141,8 +138,7 @@ double Graph::ShortestPathCost(int source, int destination)
 {
 	vector<Node> ClosedList;
 	multiset<Node> OpenList;
-	Node currentNode = vertices[source];
-	currentNode.TotalCostToDestination = 0;
+	Node currentNode;
 
 	if(source == destination)																		//Shouldn't happen will return 0
 	{
@@ -151,14 +147,16 @@ double Graph::ShortestPathCost(int source, int destination)
 	}
 
 
-	AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);		//add starting node end points to Open List
+	AddtoOpenList(OpenList, vertices[currentNode.name], currentNode.TotalCostToDestination);		//add starting node end points to Open List
+	ClosedList.push_back(vertices[currentNode.name]);												//add starting node Closed List
 
 	while(!OpenList.empty())
 	{
 		currentNode = LowestCost(OpenList);															//Find Lowest Cost Node on OpenList
-		AddtoOpenList(OpenList, ClosedList, currentNode, currentNode.TotalCostToDestination);
+		AddtoOpenList(OpenList, vertices[currentNode.name], currentNode.TotalCostToDestination);	//Add C
+		ClosedList.push_back(vertices[currentNode.name]);
 
-		if(onClosedList(ClosedList, destination))												//Have we found the destination?
+		if(DestinationFound(ClosedList, destination))												//Have we found the destination?
 		{
 			break;
 		}

@@ -18,7 +18,7 @@ using std::multiset;
 class Graph {
 
 private :
-	void AddtoOpenList(multiset<Node>& OpenList, vector<Node>& ClosedList, Node node, double currentcost);
+	void AddtoOpenList(multiset<Node>& OpenList, vector<Node> ClosedList, Node node, double currentcost);
 
 public	:
 	Graph(int density, int size);

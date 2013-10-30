@@ -1,0 +1,196 @@
+21:58:06 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+21:59:04 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+21:59:04 **** Clean-only build of configuration Debug for project Graph ****
+21:59:16 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+22:20:18 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'double Graph::ShortestPathCost(int, int)':
+..\Graph.cpp:150:88: error: no matching function for call to 'Graph::AddtoOpenList(std::multiset<Node>&, Node&, double&)'
+..\Graph.cpp:150:88: note: candidate is:
+..\Graph.cpp:78:6: note: void Graph::AddtoOpenList(std::multiset<Node>&, std::vector<Node>&, Node, double)
+..\Graph.cpp:78:6: note:   candidate expects 4 arguments, 3 provided
+..\Graph.cpp:156:89: error: no matching function for call to 'Graph::AddtoOpenList(std::multiset<Node>&, Node&, double&)'
+..\Graph.cpp:156:89: note: candidate is:
+..\Graph.cpp:78:6: note: void Graph::AddtoOpenList(std::multiset<Node>&, std::vector<Node>&, Node, double)
+..\Graph.cpp:78:6: note:   candidate expects 4 arguments, 3 provided
+..\Graph.cpp:159:46: error: 'DestinationFound' was not declared in this scope
+22:21:39 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:23:43 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:24:12 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:27:31 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+22:28:05 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+22:33:48 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::ShortestPath(int, int)':
+..\Graph.cpp:125:33: error: no match for 'operator<<' in 'std::operator<< [with _Traits = std::char_traits<char>]((* & std::cout), ((const char*)"current node:")) << currentNode'
+..\Graph.cpp:125:33: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:110:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:110:7: note:   no known conversion for argument 1 from 'Node' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:119:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:119:7: note:   no known conversion for argument 1 from 'Node' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:129:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:129:7: note:   no known conversion for argument 1 from 'Node' to 'std::ios_base& (*)(std::ios_base&)'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:167:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:167:7: note:   no known conversion for argument 1 from 'Node' to 'long int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:171:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:171:7: note:   no known conversion for argument 1 from 'Node' to 'long unsigned int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:175:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:175:7: note:   no known conversion for argument 1 from 'Node' to 'bool'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:93:5: note:   no known conversion for argument 1 from 'Node' to 'short int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:182:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:182:7: note:   no known conversion for argument 1 from 'Node' to 'short unsigned int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:107:5: note:   no known conversion for argument 1 from 'Node' to 'int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:193:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:193:7: note:   no known conversion for argument 1 from 'Node' to 'unsigned int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:202:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:202:7: note:   no known conversion for argument 1 from 'Node' to 'long long int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:206:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:206:7: note:   no known conversion for argument 1 from 'Node' to 'long long unsigned int'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:211:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:211:7: note:   no known conversion for argument 1 from 'Node' to 'double'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:215:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:215:7: note:   no known conversion for argument 1 from 'Node' to 'float'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:223:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:223:7: note:   no known conversion for argument 1 from 'Node' to 'long double'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:227:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:227:7: note:   no known conversion for argument 1 from 'Node' to 'const void*'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from 'Node' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:528:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:523:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:510:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/ostream.tcc:323:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:493:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:473:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:468:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:462:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:456:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/ostream:451:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2693:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+22:34:03 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+22:34:44 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+22:41:28 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:42:10 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+22:42:43 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:43:28 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+22:43:56 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+22:45:51 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+22:46:49 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+22:47:06 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+07:15:37 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+07:15:37 **** Clean-only build of configuration Debug for project Graph ****
+07:15:37 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+07:15:47 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+07:15:48 **** Clean-only build of configuration Debug for project Graph ****

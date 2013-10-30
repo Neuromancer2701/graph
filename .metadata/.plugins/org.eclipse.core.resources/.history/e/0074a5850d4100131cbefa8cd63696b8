@@ -10,10 +10,10 @@ using std::endl;
 int main()
 {
 	int source = 1;
-	int destination = 35;
+	int destination = 24;
 
-	int nodes = 100;
-	int density = 10;
+	int nodes = 75;
+	int density = 20;
 
 	Graph graph(density, nodes);
 
