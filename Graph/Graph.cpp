@@ -19,7 +19,7 @@ using std::multiset;
 
 // Density valid range 1-100;
 // Size valid positive integer
-Graph::Graph(int density, int size) {
+Graph::Graph(int density, int size, int lowerBound, int upperBound) {
 	Node n;
 	srand (time(NULL));
 	for(int i = 0; i < size; i++ )
@@ -35,7 +35,8 @@ Graph::Graph(int density, int size) {
 		{									//e.g. Node 1 is calculated for the whole graph so when Node 2 is calculated we can skip Node 1
 			if( rand() % 100 < density)
 			{
-				double weight = (double)((rand() % 90) + 10)/10.0;	//calculate a random edge value between 1.0 and 10.0
+				double weight = (double) (lowerBound * 100) + rand() % (upperBound * 100);//calculate a random edge value between two bounds
+				weight /= 100.0;								// multiple by 100 divide by 100 to add 2 decimal places
 				Edge edge;
 				edge.source = i;
 				edge.destination = j;

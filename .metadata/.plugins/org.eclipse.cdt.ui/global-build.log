@@ -194,3 +194,101 @@ Error: Program "rm" not found in PATH
 PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
 
 07:15:48 **** Clean-only build of configuration Debug for project Graph ****
+16:40:11 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:18:28: error: no matching function for call to 'Graph::Graph(int&, int&)'
+..\main.cpp:18:28: note: candidates are:
+..\/Graph.h:24:2: note: Graph::Graph(int, int, int, int)
+..\/Graph.h:24:2: note:   candidate expects 4 arguments, 2 provided
+..\/Graph.h:18:7: note: Graph::Graph(const Graph&)
+..\/Graph.h:18:7: note:   candidate expects 1 argument, 2 provided
+16:42:05 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+16:49:56 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:51:52 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:53:25 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:54:41 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:58:28 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:59:32 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+17:00:05 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+17:01:05 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+17:02:03 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:02:34 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:04:38 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In constructor 'Graph::Graph(int, int, int, int)':
+..\Graph.cpp:38:79: error: invalid operands of types 'int' and 'double' to binary 'operator%'
+17:05:34 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In constructor 'Graph::Graph(int, int, double, double)':
+..\Graph.cpp:38:79: error: invalid operands of types 'int' and 'double' to binary 'operator%'
+17:05:41 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In constructor 'Graph::Graph(int, int, double, double)':
+..\Graph.cpp:38:79: error: invalid operands of types 'int' and 'double' to binary 'operator%'
+17:05:59 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In constructor 'Graph::Graph(int, int, double, double)':
+..\Graph.cpp:38:77: error: invalid operands of types 'int' and 'double' to binary 'operator%'
+17:06:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+17:09:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph

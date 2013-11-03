@@ -17,9 +17,3 @@ Edge::~Edge() {
 	// TODO Auto-generated destructor stub
 }
 
-std::ostream& operator <<(std::ostream& stream, const Edge& edge)
-{
-	stream << "Src: " << edge.source << " Dest: " << edge.destination
-		   << " Cost: " << edge.cost << std::endl;
-	return stream;
-}

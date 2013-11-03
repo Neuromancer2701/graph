@@ -21,7 +21,7 @@ private :
 	void AddtoOpenList(multiset<Node>& OpenList, vector<Node>& ClosedList, Node node, double currentcost);
 
 public	:
-	Graph(int density, int size);
+	Graph(int density, int size, int lowerBound, int upperBound);
 	virtual ~Graph();
 
 	vector<Node>  vertices;  //vector of nodes
