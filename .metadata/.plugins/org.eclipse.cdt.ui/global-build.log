@@ -292,3 +292,831 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
 g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
 Info: Nothing to build for Graph
+23:20:23 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:00:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'void Graph::AddtoOpenList(std::multiset<Edge>&, Node)':
+..\Graph.cpp:172:6: warning: 'auto' will change meaning in C++0x; please remove it [-Wc++0x-compat]
+..\Graph.cpp:172:11: error: 'edges' does not name a type
+..\Graph.cpp:174:1: error: expected ';' before '}' token
+..\Graph.cpp:174:1: error: expected primary-expression before '}' token
+..\Graph.cpp:174:1: error: expected ';' before '}' token
+..\Graph.cpp:174:1: error: expected primary-expression before '}' token
+..\Graph.cpp:174:1: error: expected ')' before '}' token
+..\Graph.cpp:174:1: error: expected primary-expression before '}' token
+..\Graph.cpp:174:1: error: expected ';' before '}' token
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST()':
+..\Graph.cpp:181:39: error: no match for 'operator<' in 'ClosedList.std::vector<_Tp, _Alloc>::size [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::size_type = unsigned int] < ((Graph*)this)->Graph::vertices.std::vector<_Tp, _Alloc>::end [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Node*, std::vector<Node> >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = Node*]()'
+..\Graph.cpp:181:39: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_multiset.h:696:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_set.h:713:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_tree.h:856:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_vector.h:1290:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2534:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2522:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2510:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:341:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:291:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_pair.h:207:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:830:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:824:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+..\Graph.cpp: In member function 'double Graph::PrimMSTCost()':
+..\Graph.cpp:197:1: warning: no return statement in function returning non-void [-Wreturn-type]
+00:01:35 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST()':
+..\Graph.cpp:181:39: error: no match for 'operator<' in 'ClosedList.std::vector<_Tp, _Alloc>::size [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::size_type = unsigned int] < ((Graph*)this)->Graph::vertices.std::vector<_Tp, _Alloc>::end [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Node*, std::vector<Node> >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = Node*]()'
+..\Graph.cpp:181:39: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_multiset.h:696:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_set.h:713:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_tree.h:856:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_vector.h:1290:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2534:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2522:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2510:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1055:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1049:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:341:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:291:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_pair.h:207:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:830:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:824:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+..\Graph.cpp: In member function 'double Graph::PrimMSTCost()':
+..\Graph.cpp:197:1: warning: no return statement in function returning non-void [-Wreturn-type]
+00:02:24 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST()':
+..\Graph.cpp:181:39: error: no match for 'operator<' in 'ClosedList.std::vector<_Tp, _Alloc>::size [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::size_type = unsigned int] < ((Graph*)this)->Graph::vertices.std::vector<_Tp, _Alloc>::end [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Node*, std::vector<Node> >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = Node*]()'
+..\Graph.cpp:181:39: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_multiset.h:696:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_set.h:713:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_tree.h:856:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_vector.h:1290:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2534:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2522:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2510:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1055:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1049:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:341:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:291:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_pair.h:207:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:830:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:824:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+..\Graph.cpp: In member function 'double Graph::PrimMSTCost()':
+..\Graph.cpp:197:1: warning: no return statement in function returning non-void [-Wreturn-type]
+00:06:36 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST()':
+..\Graph.cpp:181:39: error: no match for 'operator<' in 'ClosedList.std::vector<_Tp, _Alloc>::size [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::size_type = unsigned int] < ((Graph*)this)->Graph::vertices.std::vector<_Tp, _Alloc>::end [with _Tp = Node, _Alloc = std::allocator<Node>, std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<Node*, std::vector<Node> >, typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type::pointer = Node*]()'
+..\Graph.cpp:181:39: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_multiset.h:696:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_set.h:713:5: note: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_tree.h:856:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_vector.h:1290:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2534:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2522:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2510:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1055:5: note: template<class _Iterator> bool std::operator<(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1049:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:341:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_IteratorL>&, const std::reverse_iterator<_IteratorR>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:291:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_pair.h:207:5: note: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:830:5: note: template<class _Iterator, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:824:5: note: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator<(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+..\Graph.cpp: In member function 'double Graph::PrimMSTCost()':
+..\Graph.cpp:197:1: warning: no return statement in function returning non-void [-Wreturn-type]
+00:06:52 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'double Graph::PrimMSTCost()':
+..\Graph.cpp:197:1: warning: no return statement in function returning non-void [-Wreturn-type]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:08:36 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:09:27 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST()':
+..\Graph.cpp:181:40: error: invalid use of member (did you forget the '&' ?)
+00:09:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:10:31 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:12:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:18:03 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In function 'AnyClass LowestCost(std::multiset<AnyClass>)':
+..\Graph.cpp:61:2: error: need 'typename' before 'std::multiset<AnyClass>::iterator' because 'std::multiset<AnyClass>' is a dependent scope
+..\Graph.cpp:61:36: error: expected ';' before 'it'
+..\Graph.cpp:63:11: error: 'it' was not declared in this scope
+..\Graph.cpp: In function 'AnyClass LowestCost(std::multiset<AnyClass>) [with AnyClass = Node]':
+..\Graph.cpp:127:36:   instantiated from here
+..\Graph.cpp:61:2: error: dependent-name 'std::multiset<AnyClass>::iterator' is parsed as a non-type, but instantiation yields a type
+..\Graph.cpp:61:2: note: say 'typename std::multiset<AnyClass>::iterator' if a type is meant
+..\Graph.cpp:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+00:18:21 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:28:28 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:30:25 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+00:33:25 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+In file included from c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/numeric:62:0,
+                 from ..\Graph.cpp:13:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h: In function '_Tp std::accumulate(_InputIterator, _InputIterator, _Tp) [with _InputIterator = __gnu_cxx::__normal_iterator<Edge*, std::vector<Edge> >, _Tp = double]':
+..\Graph.cpp:217:45:   instantiated from here
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h:128:2: error: no match for 'operator+' in '__init + __first.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator* [with _Iterator = Edge*, _Container = std::vector<Edge>, __gnu_cxx::__normal_iterator<_Iterator, _Container>::reference = Edge&]()'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h:128:2: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1112:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2371:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2377:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2383:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2395:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2401:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2407:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2413:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:266:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:266:3: note:   no known conversion for argument 2 from 'Edge' to 'const std::_Bit_iterator&'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:352:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:352:3: note:   no known conversion for argument 2 from 'Edge' to 'const std::_Bit_const_iterator&'
+12:52:08 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+In file included from c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/numeric:62:0,
+                 from ..\Graph.cpp:13:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h: In function '_Tp std::accumulate(_InputIterator, _InputIterator, _Tp) [with _InputIterator = __gnu_cxx::__normal_iterator<Edge*, std::vector<Edge> >, _Tp = double]':
+..\Graph.cpp:217:45:   instantiated from here
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h:128:2: error: no match for 'operator+' in '__init + __first.__gnu_cxx::__normal_iterator<_Iterator, _Container>::operator* [with _Iterator = Edge*, _Container = std::vector<Edge>, __gnu_cxx::__normal_iterator<_Iterator, _Container>::reference = Edge&]()'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_numeric.h:128:2: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:327:5: note: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_iterator.h:1112:5: note: template<class _Iterator> std::move_iterator<_Iterator> std::operator+(typename std::move_iterator<_Iterator>::difference_type, const std::move_iterator<_Iterator>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2306:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.tcc:694:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.tcc:710:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2343:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2359:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2371:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2377:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::basic_string<_CharT, _Traits, _Alloc>&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2383:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2395:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2401:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, std::basic_string<_CharT, _Traits, _Alloc>&&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2407:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, const _CharT*)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/basic_string.h:2413:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::basic_string<_CharT, _Traits, _Alloc>&&, _CharT)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:266:3: note: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:266:3: note:   no known conversion for argument 2 from 'Edge' to 'const std::_Bit_iterator&'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:352:3: note: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/bits/stl_bvector.h:352:3: note:   no known conversion for argument 2 from 'Edge' to 'const std::_Bit_const_iterator&'
+13:06:49 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+14:11:38 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In constructor 'Graph::Graph(std::string)':
+..\Graph.cpp:78:21: error: ambiguous overload for 'operator>>' in 'ifs >> (int)edge.Edge::cost'
+..\Graph.cpp:78:21: note: candidates are:
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:122:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:122:7: note:   no known conversion for argument 1 from 'int' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:126:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>, std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>] <near match>
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:126:7: note:   no known conversion for argument 1 from 'int' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:133:7: note: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:133:7: note:   no known conversion for argument 1 from 'int' to 'std::ios_base& (*)(std::ios_base&)'
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:241:7: note: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>] <near match>
+c:\mingw\bin\../lib/gcc/mingw32/4.6.2/include/c++/istream:241:7: note:   no known conversion for argument 1 from 'int' to 'std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+..\Graph.cpp:63:6: warning: unused variable 'source' [-Wunused-variable]
+..\Graph.cpp:64:6: warning: unused variable 'destination' [-Wunused-variable]
+..\Graph.cpp:65:6: warning: unused variable 'cost' [-Wunused-variable]
+14:13:34 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+14:19:21 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: error: incomplete universal character name \U
+..\main.cpp:11:14: warning: unknown escape sequence: '\c' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\D' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\g' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\d' [enabled by default]
+..\main.cpp:13:2: error: expected ',' or ';' before 'Graph'
+..\main.cpp:14:2: error: 'graph' was not declared in this scope
+14:19:28 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: error: incomplete universal character name \U
+..\main.cpp:11:14: warning: unknown escape sequence: '\c' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\D' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\g' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\d' [enabled by default]
+14:20:14 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: error: incomplete universal character name \U
+..\main.cpp:11:14: warning: unknown escape sequence: '\c' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\z' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\D' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\g' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\G' [enabled by default]
+..\main.cpp:11:14: warning: unknown escape sequence: '\d' [enabled by default]
+14:20:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: warning: unknown escape sequence: '\d' [enabled by default]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+14:20:48 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+14:21:56 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: warning: unknown escape sequence: '\z' [enabled by default]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+14:22:17 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:14: warning: unknown escape sequence: '\040' [enabled by default]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+14:26:14 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+14:26:27 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+14:26:27 **** Clean-only build of configuration Debug for project Graph ****
+14:26:31 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+14:29:23 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+14:31:12 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+14:31:41 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+14:31:49 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+14:31:49 **** Clean-only build of configuration Debug for project Graph ****
+14:33:03 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+14:57:17 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+14:59:51 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+14:59:51 **** Clean-only build of configuration Debug for project Graph ****
+14:59:51 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:01:54 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+15:01:54 **** Clean-only build of configuration Debug for project Graph ****
+15:01:54 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+15:07:32 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+15:08:13 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+15:09:18 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:14:06 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:6: warning: unused variable 'source' [-Wunused-variable]
+..\main.cpp:12:6: warning: unused variable 'destination' [-Wunused-variable]
+..\main.cpp:19:6: warning: unused variable 'density40' [-Wunused-variable]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:14:27 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:14:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:21:2: error: 'graph' was not declared in this scope
+15:14:56 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:15:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:16:06 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+15:16:11 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+15:16:19 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+15:16:19 **** Clean-only build of configuration Debug for project Graph ****
+15:16:19 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:17:34 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+main.o: In function `main':
+C:\Users\count zero\Documents\GitHub\graph\Graph\Debug/../main.cpp:19: undefined reference to `Graph::Graph(int, int, int, int)'
+collect2: ld returned 1 exit status
+15:17:42 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:19:56: error: no matching function for call to 'Graph::Graph(int&, int&, int&, int&)'
+..\main.cpp:19:56: note: candidates are:
+..\/Graph.h:26:2: note: Graph::Graph(std::string)
+..\/Graph.h:26:2: note:   candidate expects 1 argument, 4 provided
+..\/Graph.h:19:7: note: Graph::Graph(const Graph&)
+..\/Graph.h:19:7: note:   candidate expects 1 argument, 4 provided
+..\/Graph.h:19:7: note: Graph::Graph(Graph&&)
+..\/Graph.h:19:7: note:   candidate expects 1 argument, 4 provided
+15:18:02 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:6: warning: unused variable 'upperbound' [-Wunused-variable]
+..\main.cpp:12:6: warning: unused variable 'lowerbound' [-Wunused-variable]
+..\main.cpp:15:6: warning: unused variable 'nodes' [-Wunused-variable]
+..\main.cpp:16:6: warning: unused variable 'density20' [-Wunused-variable]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:18:30 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+15:20:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+15:23:54 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:6: warning: unused variable 'upperbound' [-Wunused-variable]
+..\main.cpp:12:6: warning: unused variable 'lowerbound' [-Wunused-variable]
+..\main.cpp:13:6: warning: unused variable 'nodes' [-Wunused-variable]
+..\main.cpp:14:6: warning: unused variable 'density20' [-Wunused-variable]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+15:27:43 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:33:26 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+15:35:42 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+15:35:59 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:38:00 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:42:17 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:11:6: warning: unused variable 'upperbound' [-Wunused-variable]
+..\main.cpp:12:6: warning: unused variable 'lowerbound' [-Wunused-variable]
+..\main.cpp:13:6: warning: unused variable 'nodes' [-Wunused-variable]
+..\main.cpp:14:6: warning: unused variable 'density20' [-Wunused-variable]
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:42:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+15:42:51 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:44:15 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:49:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+15:50:44 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+16:05:40 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+16:05:50 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+16:07:41 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+16:07:50 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+16:07:54 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+16:08:20 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+16:08:21 **** Clean-only build of configuration Debug for project Graph ****
+16:08:21 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:12:22 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+16:12:37 **** Clean-only build of configuration Debug for project Graph ****
+rm -rf Graph.exe Edge.o Node.o Graph.o Node.d main.o Graph.d main.d Edge.d 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python27;C:\Program Files\Java\jre7\bin;C:\MinGW\bin;C:\Program Files\Python27\Scripts]
+
+16:12:37 **** Clean-only build of configuration Debug for project Graph ****
+16:12:38 **** Rebuild of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Edge.o "..\\Edge.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Node.o "..\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+16:16:51 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:23:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+16:28:01 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:41:24 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST(int)':
+..\Graph.cpp:246:4: error: 'Cout' was not declared in this scope
+16:41:33 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:55:58 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+16:59:02 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST(int)':
+..\Graph.cpp:245:32: error: expected ';' before 'OpenList'
+16:59:13 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:04:53 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:16:47 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+17:28:55 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:31:19 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:33:22 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:36:11 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+17:42:07 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+17:42:24 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+17:42:53 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+17:43:08 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+17:57:59 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:02:42 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:03:37 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot open output file Graph.exe: Permission denied
+collect2: ld returned 1 exit status
+18:03:57 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+18:08:11 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+Info: Nothing to build for Graph
+18:09:07 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:11:27 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+..\Graph.cpp: In member function 'std::vector<Edge> Graph::PrimMST(int)':
+..\Graph.cpp:244:24: error: lvalue required as left operand of assignment
+18:11:34 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:13:21 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:14:32 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+18:18:33 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+19:34:25 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+19:36:02 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+19:36:50 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+19:37:00 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph
+19:38:56 **** Incremental Build of configuration Debug for project Graph ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o Graph.o "..\\Graph.cpp" 
+g++ -o Graph.exe main.o Node.o Graph.o Edge.o 
+Info: Nothing to build for Graph

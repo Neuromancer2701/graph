@@ -20,6 +20,10 @@ public:
 
 	double cost;
 
+	bool operator < (const Edge& edge) const
+	{
+		return (this->cost < edge.cost);
+	}
 };
 
 #endif /* EDGE_H_ */
